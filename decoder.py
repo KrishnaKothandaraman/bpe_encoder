@@ -10,6 +10,7 @@ def decode_string(encodingTable, tokens):
                 print(encodingTable[token])
                 token_buffer += [encodingTable[token][0][0]]
                 token_buffer += [encodingTable[token][0][1]]
+                count_decoded += 1
             tokens = token_buffer        
         if count_decoded == 0:
             break
